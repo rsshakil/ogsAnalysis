@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;500;600;700;900&display=swap');
+
+
+body {
+  margin: 0;
+  min-height: 100% !important;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "Meiryo",
+    "メイリオ", "sans-serif";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: #f1f1f1; */
+  background-color: #2a2a2a;
+  color: #dedede;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.header-container {
+  width : calc(100% / 3);
+}
+
+.required::after {
+  content: "必須";
+  /* background-color: #ec2323; */
+  background-color: #ff4b00;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: bold;
+  min-width: 10px;
+  padding: 4px 4px;
+  margin: 4px 5px;
+  line-height: 0.75rem;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.spinner_none {
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+}
+
+.no-spin::-webkit-inner-spin-button,
+.no-spin::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  -moz-appearance: textfield;
+}
+
+.required-class > div > label > span {
+  display: none;
+}
+
+.menu2 > div > table {
+  width: 100% !important;
+}
+
+.menu2 > div > table > tbody tr td:nth-of-type(2) {
+  width: 16px !important;
+}
+
+div[aria-label="HeaderMenu1Modal"] > div,
+div[aria-label="HeaderMenu2Modal"] > div {
+  max-width: 640px;
+}
+
+.map-container {
+  width: "-webkit-fill-available";
+  height: "100%";
+}
+
+.aspect-video {
+  aspect-ratio: 16 / 9;
+}
+
+.contain {
+  /* background-size: contain; */
+  object-fit: contain;
+}
+
+.number {
+  text-align: center;
+}
+.currency {
+  position: relative;
+  text-align: right;
+}
+/*
+.currency::before {
+  content: "¥";
+  position: absolute;
+  left: 4px;
+}
+*/
+
+.right-shadow {
+  box-shadow: 1px 0 1px 0px #95a4b8;
+}
+
+/* //////////間宮追加/////////// */
+.fake-input img {
+  position: absolute;
+  top: 285px;
+  right: 25px;
+  z-index: 50;
+  pointer-events: none;
+}
+
+/* ピッカーの曜日色 */
+.react-datepicker__day-name:first-child, .react-datepicker__day:first-child, div.isHoliday {
+  color: #ff4b00;
+}
+.react-datepicker__day-name:last-child, .react-datepicker__day:last-child {
+  color: #26A0D3;
+}
+
+
+/* devExCustum 20230918*/
+.dx-header-row, .dx-header-row td{
+  background-color: rgb(15, 0, 69);
+  color: #b0b0b0 !important;
+}
+.dx-group-row {
+  color: #dcdcdc !important;
+  font-weight: bold !important;
+  background-color: rgb(0, 0, 0) !important;
+}
+/*
+.dx-state-hover {
+  background-color: #004782 !important;
+  color: #ffffff !important;
+}
+.salesTable .dx-state-hover {
+  background-color: #4c4c4c !important;
+  color: #ffffff !important;
+}
+*/
+/* .dx-texteditor.dx-editor-outlined {
+  background: #2a2a2a !important;
+  border: 1px solid rgba(77, 77, 77, 1) !important;
+  border-radius: 4px;
+}
+
+.dx-daterangebox-with-floating-label.dx-editor-outlined .dx-texteditor-label .dx-label::before, .dx-daterangebox-with-label.dx-editor-outlined .dx-texteditor-label .dx-label::before {
+  background-color: rgba(77, 77, 77, 1) !important;
+} */
+
+/* tbody {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+
+}
+.dx-row {
+  background-color: #074797 !important;
+}
+
+.dx-row-alt {
+  background-color: #005BAB !important;
+}
+
+.dx-datagrid-rowsview .dx-row > td {
+  background-color: inherit !important;
+}
+
+.dx-datagrid .dx-row-alt > td {
+  background-color: inherit !important;
+}
+
+.dx-state-hover {
+  background-color: #3682C2 !important;
+  color: #ffffff !important;
+}
+
+.dx-header-row {
+  background-color: #E01329 !important;
+  color: #ffffff;
+  font-weight: bold;
+  border-bottom-style: solid !important;
+  border-bottom-width: 4px !important;
+  border-bottom: #11529C;
+}
+
+.dx-datagrid-rowsview .dx-row, .dx-datagrid .dx-row-alt {
+  border-top: none !important;
+  border-bottom: none !important;
+}
+
+#popupContainer .dx-overlay-content {
+  background-color: #11529C !important;
+  color: #ffffff;
+  border-color: #FACD42;
+  border-width: 2px;
+  border-radius: 16px;
+}
+
+.dx-popup-title {
+  border-color: #FACD42 !important;
+  border-bottom-width: 2px !important;
+  color: #ffffff !important;
+}
+
+.dx-icon-close::before {
+  color: #FFFFFF;
+}
+
+.dx-editor-container .dx-texteditor.dx-editor-outlined {
+  border-radius: unset;
+} */
+
+.dx-datagrid-content .dx-datagrid-table .dx-data-row > tr > td {
+  border: 1px solid #3c3c3c;
+  padding: 3px 4px;
+}
+
+/*
+.dx-datagrid-content .dx-datagrid-table .dx-row-alt > tr > td {
+  border: 1px solid #242424;
+}
+*/
+.dx-datagrid .dx-row-alt > tr > td {
+  background-color: initial;
+}
+
+.dx-column-lines > tr:hover {
+  background-color: #4c4c4c;
+}
+
+.dx-treelist-rowsview .dx-row {
+  height:  40px;
+}
+
+.dx-treelist-content .dx-treelist-table .dx-row > td {
+  vertical-align: middle;
+}
+
+/* Do not display three dots. overwrite text-overflow: ellipsis */
+/*
+.dx-datagrid-rowsview .dx-row > td,
+.dx-datagrid-rowsview .dx-row > tr > td {
+  overflow: hidden;
+  text-overflow: initial;
+}
+*/
+.dx-apply-button{
+  display: none;
+}
+
+.cards-list:after {
+  content: '';
+  flex-grow: 1000000000;
+}
+
+table.card-wrapper tr {
+  height: 25px;
+}
+table.card-wrapper tr:last-child {
+  height: auto;
+  vertical-align: top;
+}
+
+/*custom stricky*/
+#gridContainer table {
+  border-collapse: separate !important;
+}
+
+.sticky-col {
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: #2A2A2A !important;
+}
+.dx-header-row .sticky-col {
+  background-color: rgb(15, 0, 69) !important;
+}
+
+.first-col {
+  width: 48px;
+  min-width: 48px;
+  max-width: 48px;
+  left: 0px;
+  vertical-align: middle !important;
+  text-align: right;
+}
+
+.second-col {
+  width: 48px;
+  min-width: 48px;
+  max-width: 48px;
+  left: 48px;
+  vertical-align: middle !important;
+}
+
+.third-col {
+  width: 128px;
+  min-width: 128px;
+  max-width: 128px;
+  left: 96px;
+  vertical-align: middle !important;
+  overflow: visible;
+  white-space: normal;
+}
+
+.fourth-col {
+  width: 64px;
+  min-width: 64px;
+  max-width: 64px;
+  left: 224px;
+  vertical-align: middle !important;
+}
+
+.fifth-col {
+  width: 240px;
+  min-width: 240px;
+  max-width: 240px;
+  left: 288px;
+}
+
+/*gant css*/
+#gantt {
+  height: 700px;
+}
+
+.options {
+  margin-bottom: 20px;
+  background-color: rgba(191, 191, 191, 0.15);
+}
+
+.caption {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.column {
+  width: 40%;
+  display: inline-block;
+  margin: 15px 3%;
+  text-align: left;
+  vertical-align: top;
+}
+
+.option {
+  padding: 5px 0;
+}
+
+.label,
+.value {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.label {
+  width: 180px;
+}
+
+.value {
+  width: 45%;
+}
+
+.custom-task-edit-tooltip {
+  background-color: white;
+  color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px 12px 12px 12px;
+  border-radius: 3px;
+}
+
+.custom-task-edit-tooltip::before {
+  border-top-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.custom-task-edit-tooltip::after {
+  border-bottom-color: white;
+}
+
+.custom-tooltip-title {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  padding-bottom: 6px;
+}
+
+.custom-tooltip-row {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* ------------ StripLine START -------------- */
+.dx-gantt .dx-gantt-tm.current-time {
+  z-index: 10;
+  border-left: 1px solid red;
+}
+/* ------------ StripLine END -------------- */
+/*gant css*/
+
+.dx-gantt-task-edit-wrapper {
+  /* display: none !important; */
+  cursor: default !important;
+}
+.dx-gantt-task-edit-wrapper.hide-dependency .dx-gantt-task-edit-frame{
+  /* Diamond shape add pointer */
+  cursor: default !important;
+}
+/* ------------ StripLine END -------------- */
+.dx-gantt .dx-gantt-si {
+  width: 40px !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}

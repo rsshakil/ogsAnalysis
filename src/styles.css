@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#jt1 option:first-child{
+    background:red;
+    }
+    #jt1 option:nth-child(2){
+    background:ffffff;
+    }
+    .col-span-13{grid-column:span 13 / span 13}
+    .col-span-14{grid-column:span 14 / span 14}
+    .col-span-15{grid-column:span 15 / span 15}
+    .col-span-16{grid-column:span 16 / span 16}
+    .col-span-17{grid-column:span 17 / span 17}
+    .col-span-18{grid-column:span 18 / span 18}
+    .col-span-19{grid-column:span 19 / span 19}
+    .col-span-20{grid-column:span 20 / span 20}
+    .col-span-21{grid-column:span 21 / span 21}
+    .col-span-22{grid-column:span 22 / span 22}
+    .col-span-23{grid-column:span 23 / span 23}
+    .col-span-24{grid-column:span 24 / span 24}
+    .col-span-25{grid-column:span 25 / span 25}
+    .col-span-26{grid-column:span 26 / span 26}
+    .col-span-27{grid-column:span 27 / span 27}
+    .col-span-28{grid-column:span 28 / span 28}
+    .col-span-29{grid-column:span 29 / span 29}
+    .col-span-30{grid-column:span 30 / span 30}
+    .col-span-31{grid-column:span 31 / span 31}
+    .col-span-32{grid-column:span 32 / span 32}
+    .col-span-33{grid-column:span 33 / span 33}
+    .col-span-34{grid-column:span 34 / span 34}
+    .col-span-35{grid-column:span 35 / span 35}
+    .col-span-36{grid-column:span 36 / span 36}
+    .col-span-37{grid-column:span 37 / span 37}
+    .col-span-38{grid-column:span 38 / span 38}
+    .col-span-39{grid-column:span 39 / span 39}
+    .col-span-40{grid-column:span 40 / span 40}
+    .col-span-41{grid-column:span 41 / span 41}
+    .col-span-42{grid-column:span 42 / span 42}
+    .col-span-43{grid-column:span 43 / span 43}
+    .col-span-44{grid-column:span 44 / span 44}
+    .col-span-45{grid-column:span 45 / span 45}
+    .col-span-46{grid-column:span 46 / span 46}
+    .col-span-47{grid-column:span 47 / span 47}
+    .col-span-48{grid-column:span 48 / span 48}
+    .col-span-49{grid-column:span 49 / span 49}
+    .col-span-50{grid-column:span 50 / span 50}
+    
+    #contentOuterWrap {
+        overflow: overlay !important;
+    }
+    /* width */
+    ::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+        background: transparent;
+    }
+    
+    /* Track */
+    /*#FBFBFB;*/
+    /* ::-webkit-scrollbar-track {
+        background: transparent;
+        opacity: 0.1;
+    } */
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #C5C4C970;
+        border-radius: 5px;
+        opacity: 0.2;
+    }
+    
+    /* Handle on hover */
+    /* ::-webkit-scrollbar-thumb:hover {
+        background: #C5C4C9;
+    } */
+    /* #jt1 option:nth-child(2){
+        background:orange;
+        } */
